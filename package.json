@@ -1,0 +1,28 @@
+{
+  "name": "model-depth-routing",
+  "version": "1.0.0",
+  "description": "OpenCode plugin for configuring model-depth presets and routing work units.",
+  "type": "module",
+  "license": "MIT",
+  "files": [
+    "core.ts",
+    "index.ts",
+    "rpc.ts",
+    "tui.ts",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "build": "tsc",
+    "test": "npm run build && node --test dist/test/*.test.js"
+  },
+  "peerDependencies": {
+    "@opencode/plugin": ">=2.0.15 <3"
+  },
+  "devDependencies": {
+    "@opencode/plugin": "2.0.15",
+    "@types/node": "26.6.2",
+    "typescript": "5.8.3"
+  }
+}
